@@ -27,7 +27,7 @@ I have set up the debug to true, because i wanted to check the changes on websit
 
 Hope you'll enjoy it,
 
-Comments, review and suggestion are always welcome on 
+Comments, review, questions and suggestion are always welcome on 
 shashank17nov@gmail.com
 
 

@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form method="POST">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+    </div>
+    <input type="text" name="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    <div style="margin-left: 15px"></div>
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">RSS Link</span>
+    </div>
+    <input type="text" name="url" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  </div>
+  <input type="submit" class="btn btn-secondary float-right">
+</form>
+{% endblock %}

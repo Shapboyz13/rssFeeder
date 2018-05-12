@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Manga</h1>
+    <ul class="list-group">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" style="width:40%">Manga</th>
+            <th scope="col">Chapter</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for chapter in chapters %}
+          <tr>
+            <td style="width:40%" style="vertical-align:middle">
+              {{chapter.name}}
+              <p style="padding-left:15px; color:gray; font-size:12px;">Update On - {{chapter.published}}</p>
+            </td>
+            <td style="vertical-align:middle">
+              <a href="{{chapter.link}}" target="_blank">{{chapter.title}}</a>
+              {% if chapter.is_read == 1 %}
+                <small style="color:red">!New</small>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+    </ul>
+  </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/home/shanky/Documents/Personal/RSS_python/app.py", line 95, in <module>
+    app.run(debug=True, port=5876)
+  File "/home/shanky/Documents/Personal/RSS_python/RSS_python/lib/python3.5/site-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/home/shanky/Documents/Personal/RSS_python/RSS_python/lib/python3.5/site-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 98] Address already in use
